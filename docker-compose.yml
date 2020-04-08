@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+
+  laravel:
+    build: .
+    restart: always
+    ports:
+        - 80:80
+    volumes:
+      - ./laravel:/laravel

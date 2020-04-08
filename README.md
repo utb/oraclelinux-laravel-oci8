@@ -1,4 +1,4 @@
-Requisitos: Tener docker y docker compose instalado
+Requisitos: Tener docker, docker compose y visualstudio code instalado
 
 Ejecutar en la terminal:
     
@@ -50,3 +50,8 @@ Dentro del contenedor ejecuta los siguientes comandos:
     cd /laravel
     composer install
     chown -R apache:apache /laravel
+
+Seguir la documentación de:
+
+ - https://github.com/yajra/laravel-oci8
+ - https://laravel.com/docs/6.x/installation

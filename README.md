@@ -44,3 +44,9 @@ Crear un archivo .env en laravel/
 En la terminal directamente en la carpeta oraclelinux-laravel-oci8:
 
     docker-compose up --build
+
+Dentro del contenedor ejecuta los siguientes comandos:
+
+    cd /laravel
+    composer install
+    chown -R apache:apache /laravel

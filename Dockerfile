@@ -13,8 +13,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin -
 RUN composer global require laravel/installer
 WORKDIR /laravel
 
-#RUN apt install -y --reinstall systemd
-
 # Default site activation
 RUN rm /etc/httpd/conf.d/welcome.conf
 RUN rm /etc/httpd/conf/httpd.conf 

@@ -12,6 +12,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 RUN composer global require laravel/installer
 WORKDIR /laravel
+RUN composer install
 #RUN chown -R apache:apache /laravel
 
 #RUN apt install -y --reinstall systemd
